@@ -1,11 +1,11 @@
 === MB Custom Post Types & Custom Taxonomies ===
 Contributors: elightup, metabox, rilwis, duc88b, truongwp, barcavn2
 Donate link: https://metabox.io/pricing/
-Tags: custom post types, custom taxonomies, meta box, content types, cpt, post type, taxonomy, cms, post, post types, types, taxonomies, tax
+Tags: custom post types, custom taxonomies, posts, taxonomies
 Requires at least: 5.9
-Tested up to: 6.4.1
+Tested up to: 6.6.1
 Requires PHP: 7.2
-Stable tag: 2.6.2
+Stable tag: 2.7.6
 License: GPLv2 or later
 
 Create and manage custom post types and custom taxonomies with an easy-to-use UI in WordPress.
@@ -38,21 +38,13 @@ This plugin is a free extension of [Meta Box](https://metabox.io) plugin, which 
 
 If you like this plugin, you might also like our other WordPress products:
 
-- [Slim SEO](https://wpslimseo.com): A fast, lightweight and full-featured SEO plugin for WordPress with minimal configuration.
-- [Slim SEO Schema](https://wpslimseo.com/products/slim-seo-schema/): The best plugin to add schemas (structured data, rich snippets) to WordPress.
-- [Slim SEO Link Manager](https://wpslimseo.com/products/slim-seo-link-manager/): Build internal link easier in WordPress with real-time reports.
-- [GretaThemes](https://gretathemes.com): Free and premium WordPress themes that clean, simple and just work.
-- [Auto Listings](https://wpautolistings.com): The car sale and dealership plugin for WordPress
+- [Slim SEO](https://wpslimseo.com) - A fast, lightweight and full-featured SEO plugin for WordPress with minimal configuration.
+- [Slim SEO Schema](https://wpslimseo.com/products/slim-seo-schema/) - An advanced, powerful and flexible plugin to add schemas to WordPress.
+- [Slim SEO Link Manager](https://wpslimseo.com/products/slim-seo-link-manager/) - Build internal link easier in WordPress with real-time reports.
+- [GretaThemes](https://gretathemes.com) - Free and premium WordPress themes that clean, simple and just work.
+- [Auto Listings](https://wpautolistings.com) - A car sale and dealership plugin for WordPress.
 
 == Installation ==
-
-You need to install [Meta Box](https://metabox.io) plugin first
-
-- Go to Plugins | Add New and search for Meta Box
-- Click **Install Now** button to install the plugin
-- After installing, click **Activate Plugin** to activate the plugin
-
-Install **MB Custom Post Types & Custom Taxonomies** extension
 
 - Go to **Plugins | Add New** and search for **MB Custom Post Types & Custom Taxonomies**
 - Click **Install Now** button to install the plugin
@@ -61,7 +53,6 @@ Install **MB Custom Post Types & Custom Taxonomies** extension
 == Frequently Asked Questions ==
 
 == Screenshots ==
-1. All registered custom post types
 1. Edit custom post type - General tab
 1. Edit custom post type - Labels tab
 1. Edit custom post type - Advanced tab
@@ -69,6 +60,42 @@ Install **MB Custom Post Types & Custom Taxonomies** extension
 1. Edit custom post type - Taxonomies tab
 
 == Changelog ==
+
+= 2.7.6 - 2024-08-22 =
+- Fix check for premium users
+
+= 2.7.5 - 2024-08-21 =
+- Fix edge-case error when adding "add fields" links
+
+= 2.7.4 - 2024-08-19 =
+Fix running PHP Codesniffer when installing & autoload the plugin's main file via Composer
+
+= 2.7.3 - 2024-08-14 =
+- Fix menu position not working if set after Bricks
+- Fix limit of taxonomy slug 32
+- Do not auto generate slug when it's manually changed
+
+= 2.7.2 - 2024-07-22 =
+- Fix showing excerpt in post table lists
+
+= 2.7.1 - 2024-07-17 =
+- A link to create custom fields after a custom post type or a custom taxonomy was created. Requires [Meta Box Builder](https://metabox.io/plugins/meta-box-builder/) to create custom fields.
+
+= 2.7.0 - 2024-06-21 =
+
+**Highlights**:
+
+This new version brings a new UI/UX to the plugin, powered by block editor components. The new UI has the same layout and interaction as editing posts with the block editor, which will brings you a modern, friendly interface and a great experience.
+
+For more details, please see the [blog post](https://metabox.io/mb-custom-post-types-custom-taxonomies-update-ui-ux-improvements/).
+
+= 2.6.4 - 2024-04-11 =
+- Fix admin color scheme
+- Fix strings not localized
+
+= 2.6.3 - 2024-03-07=
+- Improve i18n issues
+- Fix null warning notices
 
 = 2.6.2 - 2023-11-18 =
 - Revert feature "Allow to edit WordPress's built-in post types and post types registered by other code/plugins" in 2.6.0.
